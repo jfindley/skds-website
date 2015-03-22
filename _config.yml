@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            SKDS
+tagline:          'Secure Key Distribution System'
+description:      'A system for securely distributing secret keys across a large number of systems.'
+url:              http://github.com/jfindley/skds-website
+baseurl:          /
+
+author:
+  name:           'James Findley'
+  email:          'skds@fastmail.fm'
+
+paginate:         5
+
+# Custom vars
+version:          0.1
+
+github:
+  repo:           https://github.com/jfindley/skds
