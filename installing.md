@@ -20,4 +20,4 @@ This will create three executables under $GOPATH/bin - 'admin', 'client', 'serve
 
 For extra awesomeness use your configuration management system of choice to distribute the clients, set the server address and add a cronjob to run periodically.  No user intervention is needed on the client end other than this.
 
-Congratulations - everything's installed!  Please proceed to [quick-start guide](/quickstart).
+Congratulations - everything's installed!  Please proceed to [quick-start guide]({{ site.baseurl }}/quickstart).
