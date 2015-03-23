@@ -4,13 +4,13 @@ title: Home
 tag: INDEX
 ---
 
-What is it for?
----
+# SKDS Documentation
+
+## What is it for?
 
 TLS/SSL Keys.  Encrypted secrets for config management systems.  SSH keys.  Really, pretty much anything that needs to be distrubuted securely.
 
-What can it do?
----
+## What can it do?
 
 Fully fledged administration system, built to be used by both large and small teams.  Scales easily to large numbers of admins and servers.
 
@@ -18,8 +18,7 @@ Fine-grained control over access - grant access to either individual or groups o
 
 Currently, we support Linux and OSX.  It may well work on Windows, but that's not (yet) tested.
 
-How do I use it?
----
+## How do I use it?
 
 SKDS has a three-part architecture.
 
@@ -31,8 +30,8 @@ The admin component should be installed on the administrator(s) workstations.  C
 
 Signed binaries are coming soon.  In the meantime, simply clone this repo and follow the instructions in the INSTALLING document.
 
-How secure is it?
----
+## How secure is it?
+
 Every effort has been made to make this software as secure as possible.
 The server storing the keys never sees the secrets used to encrypt them, so a compromise of the server can never reveal the keys stored on it.
 
