@@ -7,7 +7,7 @@ SKDS has two distinct types of users.  Admin users manage the system, add new se
 Client users are the servers you're distributing keys to.
 
 Clients automatically register themselves to the server, and will appear in ```admin user list``` straight away.
-From there you can assign them to a group, or just assign secrets to them directly.  They can be deleted with ```admin user delete```, but none of the other user commands apply to clients.
+From there you can assign them to a group, or just assign secrets to them directly.  Clients can be deleted with ```admin user delete```, but none of the other user commands apply to them.
 
 Admin users have more power, and generally represent a human controlling the system.
 They are created with ```admin user create```.  This will generate a random password for the new user, who will have to change it on first login.  They can be deleted later on with ```admin user delete```.

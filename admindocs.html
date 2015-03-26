@@ -7,6 +7,9 @@ title: Admin Documentation
 	The admin client requires no user-managed config files, it just needs a directory to store various files in.  This should only be readable by you.  By default this uses a directory called <code>.skds</code> in your home directory.
 
 	Usually this should be run in interactive mode, entering a password when prompted.  In this mode, you can append -h or --help to any command to see what arguments a specific command expects.
+
+	After a new server install, the first admin needs to run <code>key private set super</code> to generate a key for the super group.  This will not have to be repeated.
+
 </div>
 
 {% for doc in site.admin_docs %}

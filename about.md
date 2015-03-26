@@ -5,13 +5,12 @@ title: About
 
 SKDS is written in Go, by James Findley.  Please raise issues in [github](https://github.com/jfindley/skds/issues), or contact the author at <a href='mailt&#111;&#58;s&#107;d%7&#51;%40&#102;&#37;&#54;&#49;%&#55;3&#116;%6D%6&#49;il%2E&#102;m'>skd&#115;&#64;&#102;as&#116;mail&#46;fm</a>.
 
-## What is it for?
+## What is it?
 
-TLS/SSL Keys.  Encrypted secrets for config management systems.  SSH keys.  Really, pretty much anything that needs to be distributed securely.
+SKDS is a highly secure system for managing and distributing files such as TLS/SSL Keys, encryption secrets for config management systems, SSH keys or any other private data.
+It is designed to scale to large environments, but be small and simple enough to use almost anywhere.
 
 ## Why is this better than my current solution?
-
-Many reasons!
 
  * Easily update keys across your entire infrastructure, without ever having to connect to individual servers
  * Use groups to distribute keys to new servers automatically.  Auto-scale your environment without compromising your key security!
@@ -20,14 +19,6 @@ Many reasons!
  * Guarantee that all your servers have an up to date copy of your secrets without having to put secret data into configuration management
 
 ... and many more besides these.
-
-## What can it do?
-
-Fully fledged administration system, built to be used by both large and small teams.  Scales easily to large numbers of admins and servers.
-
-Fine-grained control over access - grant access to either individual or groups of admins and clients.
-
-Currently, we support Linux and OSX.  It may well work on Windows, but that's not (yet) tested.
 
 ## How do I use it?
 
