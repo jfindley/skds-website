@@ -1,0 +1,21 @@
+---
+layout: page
+title: Server Documentation
+---
+
+<div class="post">
+	The server currently runs as a foreground process to make it easy to run in docker containers.
+	If you wish to run it outside of docker, sysVinit/systemd scripts are coming soon, which will background it.
+
+	Full daemonisation is on the TODO list currently.
+</div>
+
+{% for doc in site.client_docs %}
+    <div class="post">
+    <h4 class="post-title">
+        {{ doc.title }}
+    </h1>
+
+    {{ doc.content }}
+  </div>
+{% endfor %}

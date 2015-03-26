@@ -6,11 +6,17 @@ highlighter:      pygments
 permalink:        pretty
 relative_permalinks: true
 
+# Collections
+collections:
+- admin_docs
+- client_docs
+- server_docs
+
 # Setup
 title:            SKDS
 tagline:          'Secure Key Distribution System'
 description:      'A system for securely distributing secret keys across a large number of systems.'
-url:              http://github.com/jfindley/skds-website
+url:              http://getskds.io/
 baseurl:          /
 
 author:

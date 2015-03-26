@@ -1,0 +1,20 @@
+---
+layout: page
+title: Admin Documentation
+---
+
+<div class="post">
+	The admin client requires no user-managed config files, it just needs a directory to store various files in.  This should only be readable by you.  By default this uses a directory called <code>.skds</code> in your home directory.
+
+	Usually this should be run in interactive mode, entering a password when prompted.  In this mode, you can append -h or --help to any command to see what arguments a specific command expects.
+</div>
+
+{% for doc in site.admin_docs %}
+    <div class="post">
+    <h4 class="post-title">
+        {{ doc.title }}
+    </h1>
+
+    {{ doc.content }}
+  </div>
+{% endfor %}

@@ -1,0 +1,18 @@
+---
+layout: page
+title: Client Documentation
+---
+
+<div class="post">
+	The client is very small and simple, and is designed to run without user interaction.
+</div>
+
+{% for doc in site.client_docs %}
+    <div class="post">
+    <h4 class="post-title">
+        {{ doc.title }}
+    </h1>
+
+    {{ doc.content }}
+  </div>
+{% endfor %}

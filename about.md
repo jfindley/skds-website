@@ -3,28 +3,40 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+SKDS is written in Go, by James Findley.  Please raise issues in [github](https://github.com/jfindley/skds/issues), or contact the author at <a href='mailt&#111;&#58;s&#107;d%7&#51;%40&#102;&#37;&#54;&#49;%&#55;3&#116;%6D%6&#49;il%2E&#102;m'>skd&#115;&#64;&#102;as&#116;mail&#46;fm</a>.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## What is it for?
 
-There are currently two themes built on Poole:
+TLS/SSL Keys.  Encrypted secrets for config management systems.  SSH keys.  Really, pretty much anything that needs to be distributed securely.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Why is this better than my current solution?
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Many reasons!
 
-## Setup
+ * Easily update keys across your entire infrastructure, without ever having to connect to individual servers
+ * Use groups to distribute keys to new servers automatically.  Auto-scale your environment without compromising your key security!
+ * All the benefits of centralised management without the risks.
+ * Have a large team to manage? Delegate management of some secrets and groups without giving away access to everything.
+ * Guarantee that all your servers have an up to date copy of your secrets without having to put secret data into configuration management
 
-Some fun facts about the setup of this project include:
+... and many more besides these.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+## What can it do?
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Fully fledged administration system, built to be used by both large and small teams.  Scales easily to large numbers of admins and servers.
 
-Thanks for reading!
+Fine-grained control over access - grant access to either individual or groups of admins and clients.
+
+Currently, we support Linux and OSX.  It may well work on Windows, but that's not (yet) tested.
+
+## How do I use it?
+
+SKDS has a three-part architecture.
+
+The server component holds the data in a database (sqlite and MySQL supported, Postgres could be added with little effort).
+
+The client component is installed on the servers you're distributing the keys to.  This is designed to be very easy to mass-deploy, and requires little local configuration.
+
+The admin component should be installed on the administrator(s) workstations.  Currently it has a CLI-only interface, although various GUI options are being considered.
+
+Signed binaries are coming soon.  In the meantime, follow the instructions on the [installing page]({{ site.baseurl }}installing)

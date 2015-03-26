@@ -16,7 +16,7 @@ All communication with the server takes place over TLS 1.2.  The certificate and
 
 ## Client
 
-On first run, a client randomly generates an authentication key, and a separate encryption keypair.  THe former is used to authenticate a client session to the server, and the latter used to decrypt secrets recieved.
+On first run, a client randomly generates an authentication key, and a separate encryption keypair.  The former is used to authenticate a client session to the server, and the latter used to decrypt secrets recieved.
 
 Even if both these secrets are stolen, an attacker cannot decrypt any secrets to which the client did not already have access.
 
@@ -27,5 +27,9 @@ Similarly to the client, a unique keypair is generated and stored on the admin c
 
 ## HSM support
 
-Every attempt is made to zero secret data in memory as fast as possible, but currently there is no support for HSMs, so secrets must be stored on disk.
+Every attempt is made to zero secret data in memory as soon as possible after use, but currently there is no support for HSMs, so secrets must be stored on disk.
 If you wish to assist with this, HSM hardware for testing purposes would be greatly appreciated.
+
+## Selinux support
+
+An SELinux policy for the server and client binaries is in progress, and should be ready soon.
