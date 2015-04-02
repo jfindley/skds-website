@@ -16,13 +16,13 @@ All communication with the server takes place over TLS 1.2.  The certificate and
 
 ## Client
 
-On first run, a client randomly generates an authentication key, and a separate encryption keypair.  The former is used to authenticate a client session to the server, and the latter used to decrypt secrets recieved.
+On first run, a client randomly generates an authentication key, and a separate encryption keypair.  The former is used to authenticate a client session to the server, and the latter used to decrypt secrets received.
 
 Even if both these keys are stolen, an attacker cannot decrypt any secrets to which the client did not already have access.
 
 ## Admin
 
-The admin tool authenticates to the server with a password that is never stored on disk, and is hashed on the server with the [scrypt](https://www.tarsnap.com/scrypt.html) algorithim.  We strongly suggest using a secure password for this.
+The admin tool authenticates to the server with a password that is never stored on disk, and is hashed on the server with the [scrypt](https://www.tarsnap.com/scrypt.html) algorithm.  We strongly suggest using a secure password for this.
 Similarly to the client, a unique keypair is generated and stored on the admin client.
 
 ## HSM support

@@ -4,7 +4,7 @@ title: Groups
 ---
 
 Groups are one of the best features of SKDS, allowing you to assign a secret to a large number of users or clients at once.
-There's no limit to the number of groups you can create, but currently a user may only belong to a single group.  Group types are also seperate - an admin cannot join a client group and vice versa.
+There's no limit to the number of groups you can create, but currently a user may only belong to a single group.  Group types are also separate - an admin cannot join a client group and vice versa.
 
 Using groups is easy.  You can list all groups with ```admin group list```, and create/delete groups with ```admin group {create|delete}```.  In the list output you will see two default groups and a super group.  These are built-in groups, and they may not be deleted.
 
