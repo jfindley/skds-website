@@ -5,13 +5,21 @@ title: Installing
 
 ## Downloading
 
-Currently only packages for 64bit Linux are provided, although others are coming soon.
-
 <table border="0"><tr><th>File</th><th>GPG Signature</th><th>SHA-256 sum</th></tr>
 <tr>
-<td><a href="/downloads/skds-0.1-HEAD-linux64.tgz">linux-64bit</a></td>
-<td><a href="/downloads/skds-0.1-HEAD-linux64.tgz.asc">gpg</a></td>
-<td><a href="/downloads/skds-0.1-HEAD-linux64.sig">shasum</a></td>
+<td><a href="/downloads/skds-linux64-0.1.0.tgz">64bit linux</a></td>
+<td><a href="/downloads/skds-linux64-0.1.0.tgz.asc">signature</a></td>
+<td><a href="/downloads/skds-linux64-0.1.0.tgz.sum">checksum</a></td>
+</tr>
+<tr>
+<td><a href="/downloads/skds-linux32-0.1.0.tgz">32bit linux</a></td>
+<td><a href="/downloads/skds-linux32-0.1.0.tgz.asc">signature</a></td>
+<td><a href="/downloads/skds-linux32-0.1.0.tgz.sum">checksum</a></td>
+</tr>
+<tr>
+<td><a href="/downloads/skds-darwin-0.1.0.tgz">OSX</a></td>
+<td><a href="/downloads/skds-darwin-0.1.0.tgz.asc">signature</a></td>
+<td><a href="/downloads/skds-darwin-0.1.0.tgz.sum">checksum</a></td>
 </tr>
 </table>
 

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Implementation
+---
+
+<div class="post">
+	Details on the underlying implementation.  <b>Reading this is not required to use the software</b>.
+	<br><br>
+	Asymmetric cryptography is used throughout.  Encryption keys have a public and private component.  When we say that a piece of data is encrypted <i>for</i> an entity, that means we are encrypting the data with our private key, and the public key of the recieving entity.  The recieving entity can then use their private key to decrypt it.  As each piece of encrypted data includes the public component of the original key, the recipient can decrypt it with their private key only.
+</div>
+
+{% for doc in site.implementation %}
+    <div class="post">
+    <h4 class="post-title">
+        {{ doc.title }}
+    </h1>
+
+    {{ doc.content }}
+  </div>
+{% endfor %}

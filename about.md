@@ -31,3 +31,7 @@ The client component is installed on the servers you're distributing the keys to
 The admin component should be installed on the administrator(s) workstations.  Currently it has a CLI-only interface, although various GUI options are being considered.
 
 Signed binaries are coming soon.  In the meantime, follow the instructions on the [installing page]({{ site.baseurl }}installing)
+
+## What's the risk of losing access to my data?
+
+Aside from the server failing (make sure you back up the server!), secrets can only be lost if you lose the keys of all your super users, and all the keys of admins and clients with access to the secret.
